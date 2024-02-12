@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>会社名： {{ store.person.company }}</div>
+  <div>氏名： {{ store.name }}</div>
+  <div>No： {{ store.no }}</div>
+  <button v-on:click="store.increment">click</button>←クリックするとNoの値がインクリメントされます。
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { useStore } from "./stores/exampleStore";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name:'app', 
+  data() {
+    return {
+      store: useStore(),
+    };
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

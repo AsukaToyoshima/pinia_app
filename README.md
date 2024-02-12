@@ -1,24 +1,23 @@
-# pinia_app
+# 概要
 
-## Project setup
-```
-npm install
-```
+ライブラリpiniaを使用し状態管理を実現したサンプルアプリです。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# 導入方法
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. node.jsのインストール
 
-### Lints and fixes files
-```
-npm run lint
-```
+[サイト](https://nodejs.org/en/download)からLTS版をダウンロード。ダウンロード済みであれば飛ばしてOK。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+2. 本アプリをクローン
+本リポジトリをCloneし、任意の場所に配置してください。
+
+3. パッケージのインストール
+ターミナルでCloneしたアプリのディレクトリに移動し、`npm install`を実行してください。
+
+4. アプリ起動
+
+ターミナルで`npm run serve`を実行しアプリを起動してください。
+
+5. ブラウザで接続
+
+ブラウザで`localhost:8080`にアクセス。
